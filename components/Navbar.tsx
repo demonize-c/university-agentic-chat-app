@@ -34,24 +34,19 @@ export function Navbar() {
                 Home
               </Link>
             </Button>
-            <Button
-              asChild
-              variant={pathname === "/documents" ? "secondary" : "ghost"}
-              size="sm"
-            >
-              <Link href="/documents">
-                <FileTextIcon className="mr-1.5 size-3.5" />
-                Documents
-              </Link>
-            </Button>
           </nav>
         </div>
 
         <div className="flex items-center gap-2">
-          <Button asChild size="sm">
+          <Button 
+            asChild 
+            size="sm" 
+            variant={pathname === "/documents" ? "secondary" : "outline"} 
+            className="cursor-pointer"
+          >
             <Link href="/documents">
               <FileTextIcon className="mr-1.5 size-3.5" />
-              Manage Documents
+              View All Documents
             </Link>
           </Button>
         </div>
