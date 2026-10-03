@@ -28,6 +28,7 @@ import { DocumentResponse } from "@/api/types"
 import { UploadDocModal } from "@/components/modals/UploadDocModal"
 import { DocInfoModal } from "@/components/modals/DocInfoModal"
 import { getDocEmbeddingStatus } from "@/lib/embeddingUtils"
+import { ChatWindow } from "@/components/chat-window"
 
 export default function Home() {
   const [isUploadOpen, setIsUploadOpen] = React.useState(false)
@@ -157,6 +158,7 @@ export default function Home() {
         isOpen={Boolean(selectedDocInfo)} 
         onClose={() => setSelectedDocInfo(null)} 
       />
+      <ChatWindow/>
     </div>
   )
 }
