@@ -137,3 +137,17 @@
     cursor: pointer;
   }
 }
+
+.ai-av{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  flex-shrink:0;
+  color:#fff;
+  background:linear-gradient(135deg,#6366f1,#ec4899)
+}
+.ai-av.sm{
+  width:28px;height:28px
+}
